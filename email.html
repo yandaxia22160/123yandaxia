@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form method="get" action="http//:www.baidu.com">
+		<input type="email">
+		<input type="submit" value="提交">
+		<input type="url">
+		<input type="date">
+		<input type="time">
+		<input type="datetime-local">
+		<input type="tel">
+		<input type="search">
+		<input type="color" id="col">
+	</form>
+	<div>111</div>
+</body>
+<script>
+	var divs=document.getElementsByTagName('div')[0];
+	var col=document.getElementById('col');
+	col.onchange=function(){
+		divs.background=col.value;
+	}
+</script> 
+</html>

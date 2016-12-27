@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+        div{
+        	width: 128px;
+        	height: 128px;
+        	border:1px solid red;
+        	padding:30px;
+        }
+        div img{
+        	width: 128px;
+        	height: 128px;
+        }
+        .box1{
+        	/*标准盒模型*/
+        	box-sizing:content-box;
+        }
+        .box2{
+        	/*怪异盒模型*/
+        	box-sizing:border-box;
+        }
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<img src="images/01.jpg" alt="">
+	</div>
+	<div class="box2"></div>
+</body>
+</html>
